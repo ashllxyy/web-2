@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/5cd2cf159e.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href= "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashllxyy's portfolio</title>
+</head>
+<body>
+    <video autoplay muted loop plays-inline class = "back">
+        <source src = "broll.mp4" type="video/mp4">
+    </video>
+    
+    <div class="hello">
+        <div id="pullout">
+        <div class="navbar">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <img src = "pullout.gif" id = "pullgif">
+        </div>
+        <div class="intro">
+        <span class = "hi">Hi, I am </span> <span class = "ash">ashllxyy</span>
+        </div>
+        <img src="log1.png" id = "intlog1">
+        <img src="log2.png" id = "intlog2">
+        <img src="log3.png" id = "intlog3">
+        <img src="log4.png" id = "intlog4">
+
+        <div class="navcons">
+            <a href = "https://github.com/ashllxyy"><i class="fa-brands fa-github fa-2xs" id = "ic1"></i></a></i>
+            <a href = "https://www.linkedin.com/in/arunesh-unnithan/" ><i class="fa-brands fa-linkedin-in fa-2xs" id="ic2"></i></a>
+            <a href = "https://www.instagram.com/arunesh_u/"><i class="fa-brands fa-instagram fa-2xs" id = "ic3"></i></a>
+            <i class="fa-brands fa-discord fa-2xs" id = "ic4"></i>
+        </div>
+    </div>
+    
+    <section>
+    <img src = "arr_slant.png" class = "abtimg">
+    <div class="container reveal">
+    <div class="abtme">
+        <div class="abt1"><span class = "abt">ABOUT </span><br><span class = "me"> ME</span></div>   
+        <div class="abt2">Arunesh Unnithan<br>Based in Mumbai, Maharashtra<br>Student at NIT Trichy<br></div>
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <video autoplay muted loop plays-inline class = "abtvid">
+        <source src = "abtme.mp4" type="video/mp4">
+    </video>  
+    <div class="line-1"></div>
+    <span class = "tritag">DESIGN   <span class = "compose">COMPOSE</span>      CREATE</span>
+    </div>
+</section>
+
+<div class="proj">
+    <div class="container reveal">
+    <div class="pro1">.01 <span class = "pro1-text">ML MODEL</span></div>
+    <div class="line-2"></div>
+    <div class="designation">TEAM HEAD <br> SOFTWARE DEV </div>
+    <div class="container scroll">
+    <div class="pro1-cont"><a href = "https://github.com/ashllxyy/TRINIT-TrichyWaale-ML03">
+        <span class = "slash">//</span>
+    Created an ML model as part of Tri-NIT Hackathon that predicted crops for farmers based on data of rainfall,
+    land parameters, etc.</a></div>
+    </div>
+    <div class="smexy"><marquee id = "marq1" scrollamount = "74" direction="left" >PROJECT <span class = "zeroone">.01</span></marquee> </div>
+    <img src = "arr_slant.png" class = "pro1-arr">
+    <div class="ashlee">ashllxyy</div>
+    </div>
+    <i class="fa-thin fa-empty-set fa-2xs" id = "intic1"></i>
+    <video autoplay muted loop plays-inline class = "prob">
+      <source src = "back.mp4" type="video/mp4">
+    </video>
+</div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+
+        window.addEventListener('scroll', sidescroll);
+    
+        function sidescroll(){
+          var scroll = document.querySelectorAll('.scroll');
+    
+          for(var i = 0; i < scroll.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = scroll[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              scroll[i].classList.add('active');
+            }
+            else{
+              scroll[i].classList.remove('active');
+            }
+          }
+        }
+        </script>
+</body>
+</html>

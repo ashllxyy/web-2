@@ -1,0 +1,443 @@
+body{
+    background-color: black;
+}
+
+.hello{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    font-size: 70px;
+    
+}
+.ash{
+    color: rgb(255, 0, 60);
+    margin-left: 5px;
+    font-family: 'Yatra One', cursive;
+    margin-bottom: 500px;
+}
+
+#intlog1{
+    height: 9vh;
+    width: 9vh;
+    position: absolute;
+    top: 55vh;
+    left: 67vh;
+    filter:hue-rotate(20)
+}
+#intlog2{
+    height: 9vh;
+    position: absolute;
+    top: 55vh;
+    width: 9vh;
+    left: 82vh;
+    filter: brightness(600%) contrast(100%);
+}
+#intlog3{
+    height: 9vh;
+    position: absolute;
+    top: 55vh;
+    left: 97vh;
+    width: 9vh;
+    filter: brightness(600%) contrast(100%);
+}
+#intlog4{
+    height: 9vh;
+    position: absolute;
+    top: 55vh;
+    width: 9vh;
+    left: 112vh;
+    filter: brightness(600%) contrast(100%);
+}
+.intro{
+    margin-top: 21%;
+    margin-left: 30%;
+}
+.intro .ash{
+    transform-origin: top;
+}
+
+.navcons{
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    color: white;
+    z-index: 99;
+}
+#ic2{
+    position: fixed;
+    right: 100px;
+    top: 300px;
+}
+#ic3{
+    position: fixed;
+    right: 100px;
+    top: 460px;
+}
+
+#ic4{
+    position: fixed;
+    right: 90px;
+    top: 610px;
+    cursor: pointer;
+}
+
+.navcons i{
+    transition: 0.5s;
+    color: white;
+    z-index: 9;
+}
+
+.navcons i:hover{
+    color:rgb(255, 0, 60);
+}
+.back{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.navbar{
+    position: fixed;
+    justify-content: left;
+    display: flex;
+    color: white;
+    z-index: 9;
+    transition: 1s;
+}
+
+#pullout img{
+    position: relative;
+    height: 80px;
+    top: 45vh;
+    left: 100px;
+    transition: 1s;
+
+}
+
+.navbar li{
+    display: inline-flexbox;
+    font-size: 25px;
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    list-style: none;
+    padding-top: 30px;
+    transition: 0.5s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+    transition: 1s;
+
+}
+
+.navbar li:hover{
+    font-size: 30px;
+    color: rgb(255, 0, 60);
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    z-index: 9;
+}
+
+.icons i{
+    display: inline-table;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    align-items: right;
+    transition: 0.5s;
+    z-index: 9;
+}
+
+.icons i:hover{
+    color:rgb(255, 0, 60);
+    cursor: pointer;
+}
+
+
+.abtme{
+    font-size: 80px;
+    color: white;
+    display:grid;
+    grid-template-columns: 500px 500px;
+    width: 50%;
+    position: relative;
+    left: 400px;
+    justify-content: center;
+    z-index: 0;
+    height: 50vh;
+}
+
+.abt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+.abt1{
+    text-align: right;
+    padding-right: 100px;
+}
+.abt2{
+    padding-left: 30px;
+    font-size: 40px;
+    font-family: 'Turret Road', cursive;
+
+}
+
+.box1{
+    background-color: white;
+    z-index: -2;
+    position: absolute;
+    height: 250px;
+    width: 500px;
+    top: -7px;
+    left: 193px
+}
+.box2{
+    background-color: rgb(255, 0, 60);
+    z-index: -3;
+    position: absolute;
+    height: 250px;
+    width: 480px;
+    top: 0px;
+    left: 200px
+}
+.line-1{
+    background-color: rgb(255, 0, 60);
+    height: 3px;
+    width: 300px;
+    rotate: 90deg;
+    position: relative;
+    left: 40.5%;
+    bottom: 280px;
+}
+
+.me{
+    color: rgb(255, 0, 60);
+    font-family: 'Yatra One', cursive;
+    letter-spacing: 10px;
+    padding-right: 15px;
+}
+
+.abtvid{
+    position: absolute;
+    z-index: -2;
+    left: 200px;
+    bottom: 59px;
+    height: 500px;
+    width: 500px;
+}
+
+.abtimg{
+    position: absolute;
+    right: 150px;
+    top: 615px;
+    z-index: -1;
+}
+.reveal{
+    position: relative;
+    top: 80vh;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+  
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.tritag{
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 80px;
+}
+.compose{
+    color:rgb(255, 0, 60);
+    z-index: 20;
+}
+
+
+#pullout{
+    position: fixed;
+    z-index: 20;
+    transition: 1s;
+    left: -12vh;
+    height: 100vh;
+    width: 25vh;
+    top: -10px;
+}
+
+
+#pullout:hover{
+    position: fixed;
+    left: -20px;
+}
+
+.pro1{
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    font-family: 'Audiowide', cursive;
+    height: 100vh;
+    position: relative;
+    left: 18vh;
+    top: 40vh;
+}
+
+.pro1-text{
+    font-family: 'Turret Road', cursive;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    color: white;
+    left: -75vh;
+}
+
+.pro1-cont{
+    font-size: 30px;
+    color:black;
+    position: relative;
+    width: 42vh;
+    left:118vh;
+    bottom: ;
+    font-family: 'Turret Road', cursive;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 900;
+}
+.scroll a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.scroll a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.smexy marquee{
+    font-size: 500px;
+    opacity: 20%;
+    font-family: 'Yatra One', cursive;
+    position: relative;
+    top: 80px;
+}
+.zeroone{
+    font-family: 'Audiowide', cursive;
+}
+.designation{
+    font-size: 25px;
+    font-family: 'Audiowide', cursive;
+    text-align: right;
+    color: white;
+    position: relative;
+    right: 44.5%;
+    bottom: 250px;
+}
+.smexy{
+    height: 105vh;
+    width: 200vh;
+    position: relative;
+    bottom: 1000px;
+    background-color: rgb(148, 0, 30);
+    transition: 1s;
+    z-index: -2;
+    left: -20px;
+}
+.pro2-text{
+    font-family: 'Turret Road', cursive;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    color: white;
+    left: -85vh;
+}
+
+
+.pro3-text{
+    font-family: 'Turret Road', cursive;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    color: white;
+    left: -95vh;
+}
+.line-2{
+    background-color: white;
+    height: 3px;
+    width: 400px;
+    rotate: 90deg;
+    position: relative;
+    left: 45%;
+    bottom: 320px;
+}
+
+.reveal.active .smexy{
+    background-color: rgb(138, 0, 28)
+}
+
+.scroll{
+    position: relative;
+    bottom: 500px;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+  
+.scroll.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.slash{
+    color: white;
+}
+
+.pro1-arr{
+    position: relative;
+    bottom: 216.89vh;
+    z-index: -2;
+    opacity: 80%;
+    scale: -1.7;
+    left: -300px;
+    filter:grayscale() brightness(-600%)
+}
+
+.ashlee{
+    background: linear-gradient(to top, white 50%, black 50%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 58vh;
+    position: relative;
+    bottom: calc(200vh + 34px);
+    font-size: 50px;
+    font-family: 'Yatra One', cursive;
+    text-align: center;
+    letter-spacing: 35px;
+    left: 35.65%
+}
+
+
+.prob{
+    position: absolute;
+    height: 200vh;
+    width: 197vh;
+    left: -5px;
+    top: 250vh;
+    opacity: 50%;
+    z-index: -1;
+}
